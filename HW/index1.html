@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Homework-buttons</title>
+	<style>
+	.btn-wrapper{
+		height: 60vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.btn{
+		border: none;
+		border-radius: 20px;
+		min-width: 120px;
+		padding: 7px;
+		color: #fff;
+		font-size: 14px;
+		background-color: #33333a;
+		cursor: pointer;
+	}
+	.btn:active,
+	.btn:focus{
+		outline: none;
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="btn-wrapper">
+    <button class="btn" id="Ent">Enter</button>
+		<button class="btn" id="S">S</button>
+		<button class="btn" id="E">E</button>
+		<button class="btn" id="O">O</button>
+		<button class="btn" id="N">N</button>
+		<button class="btn" id="L">L</button>
+		<button class="btn" id="Z">Z</button>
+	</div>
+	<script>
+		
+
+		ent = document.getElementById("Ent")
+		s = document.getElementById("S")
+		g = document.getElementById("E")
+		o = document.getElementById("O")
+		n = document.getElementById("N")
+		l = document.getElementById("L")
+		z = document.getElementById("Z")
+		document.addEventListener("keydown", (e) => {
+			if  (e.code == "Enter"){
+				console.log("dkpfgh")
+				ent.style.backgroundColor = "blue"
+				if(s.style.backgroundColor == 'blue'||
+				g.style.backgroundColor == "blue" || 
+				o.style.backgroundColor == "blue" ||
+				n.style.backgroundColor == "blue" ||
+				l.style.backgroundColor == "blue" ||
+				z.style.backgroundColor == "blue" 
+				){
+				s.style.backgroundColor = '#33333a'
+				g.style.backgroundColor = "#33333a" 
+				o.style.backgroundColor ="#33333a" 
+				n.style.backgroundColor = "#33333a" 
+				l.style.backgroundColor = "#33333a" 
+				z.style.backgroundColor ="#33333a" 
+				}
+			};
+			if (e.key == "S"){
+				s.style.backgroundColor = "blue"
+				if(ent.style.backgroundColor == 'blue'||
+				g.style.backgroundColor == "blue" || 
+				o.style.backgroundColor == "blue" ||
+				n.style.backgroundColor == "blue" ||
+				l.style.backgroundColor == "blue" ||
+				z.style.backgroundColor == "blue" 
+				){
+				ent.style.backgroundColor = '#33333a'
+				g.style.backgroundColor = "#33333a" 
+				o.style.backgroundColor ="#33333a" 
+				n.style.backgroundColor = "#33333a" 
+				l.style.backgroundColor = "#33333a" 
+				z.style.backgroundColor ="#33333a" 
+				}
+			}
+			if (e.key == "E"){
+				g.style.backgroundColor = "blue"
+				if(ent.style.backgroundColor == 'blue'||
+				s.style.backgroundColor == "blue" || 
+				o.style.backgroundColor == "blue" ||
+				n.style.backgroundColor == "blue" ||
+				l.style.backgroundColor == "blue" ||
+				z.style.backgroundColor == "blue" 
+				){
+				ent.style.backgroundColor = '#33333a'
+				s.style.backgroundColor = "#33333a" 
+				o.style.backgroundColor ="#33333a" 
+				n.style.backgroundColor = "#33333a" 
+				l.style.backgroundColor = "#33333a" 
+				z.style.backgroundColor ="#33333a" 
+				}
+			}
+			if (e.key == "O"){
+				o.style.backgroundColor = "blue"
+				if(ent.style.backgroundColor == 'blue'||
+				g.style.backgroundColor == "blue" || 
+				s.style.backgroundColor == "blue" ||
+				n.style.backgroundColor == "blue" ||
+				l.style.backgroundColor == "blue" ||
+				z.style.backgroundColor == "blue" 
+				){
+				ent.style.backgroundColor = '#33333a'
+				g.style.backgroundColor = "#33333a" 
+				s.style.backgroundColor ="#33333a" 
+				n.style.backgroundColor = "#33333a" 
+				l.style.backgroundColor = "#33333a" 
+				z.style.backgroundColor ="#33333a" 
+				}
+			}
+			if (e.key == "N"){
+				n.style.backgroundColor = "blue"
+				if(ent.style.backgroundColor == 'blue'||
+				g.style.backgroundColor == "blue" || 
+				o.style.backgroundColor == "blue" ||
+				s.style.backgroundColor == "blue" ||
+				l.style.backgroundColor == "blue" ||
+				z.style.backgroundColor == "blue" 
+				){
+				ent.style.backgroundColor = '#33333a'
+				g.style.backgroundColor = "#33333a" 
+				o.style.backgroundColor ="#33333a" 
+				s.style.backgroundColor = "#33333a" 
+				l.style.backgroundColor = "#33333a" 
+				z.style.backgroundColor ="#33333a" 
+				}
+			}
+			if (e.key == "L"){
+				l.style.backgroundColor = "blue"
+				if(ent.style.backgroundColor == 'blue'||
+				g.style.backgroundColor == "blue" || 
+				o.style.backgroundColor == "blue" ||
+				n.style.backgroundColor == "blue" ||
+				s.style.backgroundColor == "blue" ||
+				z.style.backgroundColor == "blue" 
+				){
+				ent.style.backgroundColor = '#33333a'
+				g.style.backgroundColor = "#33333a" 
+				o.style.backgroundColor ="#33333a" 
+				n.style.backgroundColor = "#33333a" 
+				s.style.backgroundColor = "#33333a" 
+				z.style.backgroundColor ="#33333a" 
+				}
+			}
+			if (e.key == "Z"){
+				z.style.backgroundColor = "blue"
+				if(ent.style.backgroundColor == 'blue'||
+				g.style.backgroundColor == "blue" || 
+				o.style.backgroundColor == "blue" ||
+				n.style.backgroundColor == "blue" ||
+				l.style.backgroundColor == "blue" ||
+				s.style.backgroundColor == "blue" 
+				){
+				ent.style.backgroundColor = '#33333a'
+				g.style.backgroundColor = "#33333a" 
+				o.style.backgroundColor ="#33333a" 
+				n.style.backgroundColor = "#33333a" 
+				l.style.backgroundColor = "#33333a" 
+				s.style.backgroundColor ="#33333a" 
+				}
+			}
+		})
+	</script>
+</body>
+</html>
